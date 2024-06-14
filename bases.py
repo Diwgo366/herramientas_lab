@@ -1,6 +1,11 @@
 import os
 import numpy as np
 
+def existencia(ruta):
+    if not os.path.exists(ruta):
+        os.makedirs(os.path.dirname(ruta), exist_ok=True)
+
+
 def punto_coma(ubicacion):
     with open(ubicacion, 'r') as file:
         data = file.read()

@@ -1,4 +1,4 @@
-from bases import punto_coma, coma_punto, ecuacion_lineal, ecuacion_potencial, GeneradorColor
+from bases import punto_coma, coma_punto, ecuacion_lineal, ecuacion_potencial, GeneradorColor, existencia
 import numpy as np
 import pyperclip
 
@@ -11,6 +11,9 @@ CUADRADO = False
 punto_coma(DATOS)
 
 matrix = np.loadtxt(DATOS)
+
+existencia(GRAFICO)
+
 colores = GeneradorColor()
 
 for j in range(len(COLUMNA_X)):

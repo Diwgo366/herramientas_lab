@@ -1,4 +1,4 @@
-from bases import punto_coma, coma_punto, ecuacion_lineal, ecuacion_potencial
+from bases import punto_coma, coma_punto, ecuacion_lineal, ecuacion_potencial, existencia
 import numpy as np
 import pyperclip
 
@@ -10,7 +10,10 @@ COLOR_PUNTOS = "black"
 COLOR_RECTA = "red"
 TIPO = True
 CUADRADO = False
+
 punto_coma(DATOS)
+
+existencia(GRAFICO)
 
 matrix = np.loadtxt(DATOS)
 

@@ -1,4 +1,4 @@
-from bases import punto_coma, coma_punto
+from bases import punto_coma, coma_punto, existencia
 import numpy as np
 import pyperclip
 
@@ -8,6 +8,8 @@ TABLA = "Resultados/tabla.txt"
 punto_coma(DATOS)
 
 matrix = np.loadtxt(DATOS)
+
+existencia(TABLA)
 
 with open(TABLA, 'w') as f:
     # Escribir el inicio de la tabla
